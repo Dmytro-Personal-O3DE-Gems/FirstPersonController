@@ -1,0 +1,31 @@
+{
+    "gem_name": "FirstPersonController",
+    "version": "1.0.0",
+    "display_name": "First Person Controller",
+    "license": "Apache-2.0",
+    "license_url": "",
+    "origin": "Dmytro Shyshkin",
+    "origin_url": "",
+    "type": "Code",
+    "summary": "Controller for the First Person game",
+    "canonical_tags": [
+        "Gem"
+    ],
+    "user_tags": [
+        "FirstPersonController"
+    ],
+    "platforms": [
+        "Windows","Linux","Android","iOS"
+    ],
+    "icon_path": "",
+    "requirements": "",
+    "documentation_url": "",
+    "dependencies": [
+        "StartingPointInput"
+    ],
+    "repo_uri": "",
+    "compatible_engines": [
+    ],
+    "engine_api_dependencies":[
+    ]
+}

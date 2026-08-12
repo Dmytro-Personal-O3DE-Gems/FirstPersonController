@@ -48,7 +48,7 @@ namespace FirstPersonController
         void Activate() override;
         void Deactivate() override;
         virtual void OnTick(float deltaTime, AZ::ScriptTimePoint time);
-        
+
         // Inputs implemented methods
         void OnPressed(float value) override;
         void OnHeld(float value) override;
@@ -95,7 +95,7 @@ namespace FirstPersonController
                 float   m_fGroundedSphereCastOffset = 0.1f; // насколько ниже ног проверяем землю
                 float   m_fHeadHitCheckDistance = 0.20f;
 
-            
+
             float m_fAcceleration = 10.0f;
             // ~Movement
 
@@ -154,7 +154,7 @@ namespace FirstPersonController
             bool CanStandUp() const;
 
             // ~Crouching
-            
+
             // Jumping
             void CheckGrounded();
             bool CheckHeadHit() const;

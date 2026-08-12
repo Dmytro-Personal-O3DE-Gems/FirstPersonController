@@ -105,7 +105,7 @@ namespace FirstPersonController
                     ->Attribute(AZ::Edit::Attributes::Category, "Components")
                     ->Attribute(AZ::Edit::Attributes::Icon, "Icons/Components/Component_Placeholder.svg")
                     ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC_CE("Game"))
-                    
+
 
                 // --- Группа "Camera & Look" ---
                 ->ClassElement(AZ::Edit::ClassElements::Group, "Camera & Look")
@@ -230,7 +230,7 @@ namespace FirstPersonController
 
         return resultSpeed;
     }
-    
+
     float FirstPersonComponent::CalculateBaseSpeed() const {
         return m_bIsCrouching ? m_fCrouchSpeed : m_fWalkSpeed;
     }
@@ -284,7 +284,7 @@ namespace FirstPersonController
         {
             PhysX::CharacterControllerRequestBus::Event(GetEntityId(), &PhysX::CharacterControllerRequests::Resize, m_fInitialHeight);
             m_tCameraBaseLocalTranslation = m_tInitialCameraTransform;
-        }            
+        }
     }
 
     bool FirstPersonComponent::CanStandUp() const
@@ -579,7 +579,7 @@ namespace FirstPersonController
             }
             // иначе остаёмся присевшими — попробуем ещё раз в OnTick
             return;
-        }       
+        }
 
         if (*currentId == StartingPointInput::InputEventNotificationId("Forward") ||
             *currentId == StartingPointInput::InputEventNotificationId("Back"))
@@ -593,4 +593,4 @@ namespace FirstPersonController
         }
     }
     // ~Inputs
-} // namespace FirstPersonController
+}
